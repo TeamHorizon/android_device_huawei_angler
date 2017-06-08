@@ -8,6 +8,8 @@ $(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 
+PRODUCT_PROPERTY_OVERRIDES += ro.xenonhd.maintainer=iceandfire
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := xenonhd_angler
 PRODUCT_BRAND := google
